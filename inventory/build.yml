@@ -1,0 +1,2 @@
+plugin: collectionlib.core.external_host_inventory
+service_endpoint: https://demo.netbox.dev

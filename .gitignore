@@ -1,0 +1,8 @@
+.idea
+venv
+temp_dir
+__pycache__
+collections
+.coverage
+test-reports
+dest

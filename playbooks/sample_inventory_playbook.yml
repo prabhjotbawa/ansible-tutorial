@@ -1,0 +1,8 @@
+---
+- name: "CR status"
+  hosts: all
+  gather_facts: false
+  connection: local
+
+  roles:
+    - role: sample_inventory_role

@@ -1,0 +1,39 @@
+[tool.poetry]
+name = "collectionlib.core"
+version = "0.1.0"
+description = "Ansible tutorial project"
+authors = ["Prabhjot Bawa <prabhjotbawa@gmail.com>"]
+readme = "README.md"
+packages = [
+    { include = "plugins" }
+]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+ansible = "^9.0"
+ansible-runner = "^2.3.4"
+ansible-core = "^2.16.4"
+requests = "^2.32.3"
+
+[tool.poetry.group.dev.dependencies]
+pylint = "^3.0.3"
+pytest-ansible = ">=4.1.1,<4.2.0"
+pytest-cov = "^4.1.0"
+ansible-lint = { version = "^24.2.0", markers = "platform_system != 'Windows'" }
+
+[[tool.poetry.source]]
+name = "pypi"
+priority = "primary"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+addopts = "--ansible-host-pattern=all --ignore=temp_dir"
+testpaths = [
+    "./tests",
+]
+filterwarnings = [
+    'ignore:AnsibleCollectionFinder has already been configured',
+]

@@ -1,0 +1,4 @@
+---
+- name: "Sample role"
+  ansible.builtin.debug:
+    msg: "The cluster {{ inventory_cluster_name }} is {{ inventory_cluster_status }}"
