@@ -13,6 +13,8 @@ time however my vision is to have the below covered and I will follow an iterati
 
 Additional documentation related to sample playbooks can be found [here](./docs/helper.md)
 
+I will also add a developer doc at a later date.
+
 ## What's completed
 - Inventory plugin
-  - Calls netbox api to query clusters and add set set host vars, group vars to use in playbooks
+  - Calls netbox api to query clusters and sets host vars, group vars to use in playbooks
